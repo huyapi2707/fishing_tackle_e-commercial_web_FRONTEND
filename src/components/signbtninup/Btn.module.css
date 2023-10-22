@@ -1,0 +1,103 @@
+.container {
+    display: flex;
+}
+.container a {
+    outline: none;
+    border: none;
+    font-size: 15px;
+    padding: 1em 1em;
+    position: relative;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.container a.register {
+    color: black;
+}
+
+.container a.login {
+    color: rgba(0, 0, 0, 1);
+}
+
+.container a:active {
+    transform: scale(0.98);
+}
+
+.container a.register:active {
+    box-shadow: 0.1px 0.1px 1px #00aeff;
+}
+
+.container a.login:active {
+    box-shadow: 0.1px 0.1px 1px #466e37;
+}
+
+.container a span {
+    position: absolute;
+    transition: 0.5s;
+}
+
+.container a.register span {
+    box-shadow: 1px 1px 10px #00aeff;
+    background: #00aeff;
+}
+
+.container a.login span {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.container a span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 30%;
+}
+
+.container a:hover span:nth-child(1) {
+    height: 100%;
+}
+
+.container a span:nth-child(2) {
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 2px;
+}
+
+.container a:hover span:nth-child(2) {
+    width: 100%;
+}
+
+.container a span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 2px;
+    height: 30%;
+}
+
+.container a:hover span:nth-child(3) {
+    height: 100%;
+}
+
+.container a span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+    width: 15%;
+    height: 2px;
+}
+
+.container a:hover span:nth-child(4) {
+    width: 100%;
+}
+
+.container a.login:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.container a.register:hover {
+    background-color: royalblue;
+    color: white;
+}

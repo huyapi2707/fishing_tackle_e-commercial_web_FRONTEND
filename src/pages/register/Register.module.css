@@ -1,0 +1,239 @@
+.loginBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 23%;
+    padding: 40px;
+    margin: 20px auto;
+    transform: translate(-50%, -55%);
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.loginBox p:first-child {
+    margin-bottom: 12%;
+    padding: 0;
+    color: #3d72b4;
+    text-align: center;
+    font-size: 2.9rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.loginBox .userBox {
+    position: relative;
+    margin: 3% 0;
+}
+
+.loginBox .userBox input {
+    width: 100%;
+    padding: 25px 0 0 0;
+    font-size: 20px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent !important;
+}
+
+.loginBox .userBox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    color: black;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.loginBox .userBox input:focus ~ label,
+.loginBox .userBox input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.loginBox form a.submit {
+    position: relative;
+    display: inline-block;
+    padding: 25px 20px;
+    font-weight: 750;
+    color: black;
+    font-size: 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 30px;
+    letter-spacing: 3px;
+}
+
+.loginBox a.submit:hover {
+    background: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loginBox a.submit span {
+    position: absolute;
+    display: block;
+}
+
+.loginBox a.submit span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, black);
+    animation: btn-anim1 1.5s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.loginBox a.submit span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, black);
+    animation: btn-anim2 1.5s linear infinite;
+    animation-delay: 0.375s;
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.loginBox a.submit span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, black 0%);
+    animation: btn-anim3 1.5s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.loginBox a.submit span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, black);
+    animation: btn-anim4 1.5s linear infinite;
+    animation-delay: 1.125s;
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+.loginBox p:last-child {
+    color: black;
+    font-size: 20px;
+}
+
+.loginBox a.register {
+    color: black;
+    text-decoration: none;
+}
+
+.loginBox a.register:hover {
+    background: transparent;
+    color: skyblue;
+    border-radius: 5px;
+}
+
+.userBox a.forgotPassword {
+    position: absolute;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+    right: 0;
+    bottom: -10px;
+}
+
+.loginBox a.forgotPassword:hover {
+    background: transparent;
+    color: skyblue;
+    border-radius: 5px;
+}
+
+.loginBox img {
+    width: 15%;
+    height: 15%;
+    padding: 0px 0 0 3px;
+}
+
+form .userBox span {
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    font-size: 15px;
+    color: red;
+}
+
+.inputError {
+    border-bottom: 1px solid red !important;
+}
+
+.vibrate {
+    animation: vibrate 0.35s ease-out;
+}
+
+@keyframes vibrate {
+    25% {
+        left: 49%;
+    }
+
+    50% {
+        left: 50%;
+    }
+    75% {
+        left: 51%;
+    }
+    100% {
+        left: 50%;
+    }
+}

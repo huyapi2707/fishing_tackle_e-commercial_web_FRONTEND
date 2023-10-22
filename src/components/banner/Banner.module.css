@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap');
+.container {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    background: linear-gradient(315deg, rgba(0, 150, 255, 1) 5%, rgba(249, 249, 249, 1) 5%);
+    display: flex;
+    padding: 20px;
+}
+
+.text {
+    width: 50%;
+    font-family: 'Kanit', sans-serif;
+    position: relative;
+    display: inline-block;
+}
+
+.image {
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text p {
+    font-size: 4.375rem;
+    text-transform: capitalize;
+}
+
+.text .firstText {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 0;
+    border-right: 5px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s 2s steps(20) forwards, cursor 0.4s 2s step-end;
+}
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    to {
+        width: 85%;
+    }
+}
+
+.text .secondText {
+    text-transform: uppercase;
+    position: absolute;
+    left: 38%;
+    top: 35%;
+    font-size: 6.25rem;
+    color: #00aeff;
+    animation: appear 2s 5s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+    }
+}
+.text .slogan {
+    position: absolute;
+    left: 35%;
+    text-transform: none;
+    font-size: 1.5rem;
+    top: 68%;
+    color: #7b7b7b;
+    opacity: 0;
+    animation: slogan 1s 6s linear forwards;
+}
+
+@keyframes slogan {
+    to {
+        opacity: 1;
+        transform: translateY(-40%);
+    }
+}

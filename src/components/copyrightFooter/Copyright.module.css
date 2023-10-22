@@ -1,0 +1,9 @@
+.copyRightText {
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    bottom: 0;
+    font-size: 15px;
+    color: #999;
+    text-align: center;
+}

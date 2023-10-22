@@ -1,0 +1,139 @@
+.form {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    width: 20%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: 0.4s ease-in-out;
+}
+
+.form:hover {
+    box-shadow: none;
+    scale: 0.99;
+}
+
+.heading {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0 0 0;
+    padding: 0px 0 10px 0px;
+}
+
+.input {
+    position: relative;
+    width: 3em;
+    height: 3em;
+    margin: 1.5em;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(235, 235, 235);
+    box-shadow: inset 3px 3px 6px #d1d1d1, inset -3px -3px 6px #ffffff;
+    text-transform: uppercase;
+    padding: 5px;
+    transition: 0.4s ease-in-out;
+    text-align: center;
+}
+
+.input:hover {
+    box-shadow: inset 0px 0px 0px #d1d1d1, inset 0px 0px 0px #ffffff;
+    background-color: lightgrey;
+}
+
+.input:focus {
+    box-shadow: inset 0px 0px 0px #d1d1d1, inset 0px 0px 0px #ffffff;
+    background-color: lightgrey;
+}
+
+.btn1 {
+    width: 15rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: 0.4s ease-in-out;
+    box-shadow: 1px 1px 3px #b5b5b5, -1px -1px 3px #ffffff;
+    margin-top: 1.5em;
+    font-size: 17px;
+}
+
+.btn1:active {
+    box-shadow: inset 3px 3px 6px #b5b5b5, inset -3px -3px 6px #ffffff;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title::before,
+.title::after {
+    position: absolute;
+    content: '';
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    top: 2px;
+    left: -25%;
+    background-color: royalblue;
+}
+
+.title::before {
+    width: 34px;
+    height: 34px;
+    background-color: royalblue;
+}
+
+.title::after {
+    width: 34px;
+    height: 34px;
+    animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+.inputError {
+    border: 1px solid #ff4d4d;
+}
+.vibrate {
+    animation: vibrate 0.35s ease-out;
+}
+
+@keyframes vibrate {
+    25% {
+        left: 39%;
+    }
+
+    50% {
+        left: 40%;
+    }
+    75% {
+        left: 41%;
+    }
+    100% {
+        left: 40%;
+    }
+}
